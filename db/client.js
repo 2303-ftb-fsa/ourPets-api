@@ -3,6 +3,11 @@ const { DATABASE_URL } = process.env;
 
 const connectionString = DATABASE_URL || 'postgres://localhost:5432/our_pets';
 
-const client = new Client(connectionString);
+const client = new Client({
+  connectionString,
+  ssl: {
+    rejectUnauthorized: false,
+  },
+});
 
 module.exports = { client };
