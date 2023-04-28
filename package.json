@@ -1,0 +1,28 @@
+{
+  "name": "our-pets-demo-01",
+  "version": "1.0.0",
+  "description": "a demo for pg",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "seed": "node seed/seed.js",
+    "seed:dev": "nodemon seed/seed.js",
+    "start": "node index.js",
+    "start:dev": "nodemon index.js"
+  },
+  "keywords": [
+    "pg",
+    "node"
+  ],
+  "author": "us",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "pg": "^8.10.0"
+  }
+}
